@@ -8,6 +8,7 @@
 html,
 body {
     font-family: Montserrat;
+    color: white;
 }
 
 a {
@@ -15,15 +16,19 @@ a {
     color: white;
 }
 
+/* 
+===========================
+Navbar 
+===========================
+*/
+
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* gap: 128px; */
     background-color: #183036;
     padding: 1rem 8rem;
-    color: white;
 }
 
 .logo {
@@ -32,8 +37,7 @@ header {
 }
 
 nav {
-   
-    /* flex: 1; */
+    /* Optional styling */
 }
 
 .nav-list {
@@ -42,7 +46,6 @@ nav {
     align-items: center;
     gap: 2rem;
     font-size: 14px;
-    /* background: violet; */
 }
 
 .hire-me {
@@ -52,13 +55,8 @@ nav {
     font-weight: 500;
 }
 
-.hire-me:hover {
-    color: white;
-}
-.hire-me:visited {
-    color: white;
-}
-
+.hire-me:hover,
+.hire-me:visited,
 .hire-me:active {
     color: white;
 }
@@ -67,5 +65,67 @@ nav {
 .bx-search {
     cursor: pointer;
     font-size: 20px;
+}
+
+/* 
+===========================
+Footer 
+===========================
+*/
+
+.footer-top {
+    background-color: #0d1b1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.contact-info {
+    margin-top: 1rem;
+}
+
+.contact-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    background-color: #000000;
+    padding: 1rem 8rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-list-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px; /* small space between icons */
+    font-size: 20px; /* slightly bigger for better visibility */
+}
+
+.social-list-container li {
+    list-style: none; /* remove bullets */
+}
+
+.social-list-container a {
+    color: white; /* keep icons white */
+    font-size: 20px;
+    transition: color 0.3s ease;
 }
 
